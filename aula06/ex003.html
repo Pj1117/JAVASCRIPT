@@ -27,11 +27,19 @@
     <div>
         <h1>Olá, Mundo!</h1>
         <p>já me livrei da maldição!!</p>
+        <p>**Para converter para string: <br>
+            <ul>
+                <li>String(n)</li>
+                <li>n.toString()</li>
+            </ul>
+        </p>
     </div>
     <script>
-        window.alert('Minha primeira mensagem') /*Abre uma caixa de alerta*/
-        window.confirm('Está gostando de JS?') /*Abre uma caixa de confirmação*/
-        window.prompt('O paulin é disbacana? (S/N)') /*Abre uma caixa onde é possível digitar alguma coisa*/
+       var n1 = Number.parseFloat(window.prompt('Digite um número:')) /*Vai converter direto para inteiro*/
+       var n2 = Number.parseFloat(window.prompt('Digite outro numero:')) /*Prompt sempre retorna uma string*/
+        /*Vai converter direto para numero com vírgula*/
+       var s = Number(n1) + Number(n2)
+       window.alert(`A soma dos valores ${n1} e ${n2} é  ${s}`)
     </script>
 </body>
 </html>
