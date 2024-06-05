@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numero = 5
+
+        numero *= 5 /*1° na Ordem de precedência*/
+        numero /= 3/*1° na Ordem de precedência*/
+        numero %= 4 /*1° na Ordem de precedência*/
+        numero **= 6 /*2° na Ordem de precedência*/
+        numero += 9 /*3° na ordem de precedência*/
+        numero -= 4 /*3° na Ordem de precedência*/
+
+        numero ++ /*Calucula o resultado depois*/
+        numero -- /*Calcula o resultado depois*/
+        
+        ++ numero /*Calcula o resultado primeiro*/
+        -- numero /*Calcula o resultado primeiro*/
+
+        document.write(`Variável numero: ${numero}`)
+    </script>
+</body>
+</html>
