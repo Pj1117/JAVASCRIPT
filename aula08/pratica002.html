@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores em JS</title>
+</head>
+<body>
+    <script>
+        window.alert('**CALCULADORA**')
+        window.confirm('Deseja utilizar a calculadora?')
+        var n1 = Number(window.prompt('Digite o 1° número'))
+        var n2 = Number(window.prompt('Digite o 2° Número'))
+
+        var soma = n1 + n2
+        var subtracao = n1 - n2
+        var multiplicacao = n1 * n2
+        var divisao = n1 / n2 
+        var potencia = n1 ** n2
+        var resto = n1 % n2
+
+        var maior = n1 > n2
+        var menor = n1 < n2
+        var igual = n1 == n2
+        var identico = n1 === n2
+        var diferente = n1 != n2
+        var nao_identico = n1 !== n2
+
+        document.write(`
+
+        Aqui estão os Resultados com <strong>Operadores Aritiméticos</strong>:<br>
+        <br>
+        ${n1}  + ${n2} = ${soma}<br>
+        ${n1}  - ${n2} = ${subtracao}<br>
+        ${n1}  * ${n2} = ${multiplicacao}<br>
+        ${n1}  / ${n2} = ${divisao}<br>
+        ${n1} ** ${n2} = ${potencia}<br>
+        ${n1}  %  ${n2} = ${resto}<br>
+        <br>
+
+        Resultados com Operadores Condicionais<br>
+        <br>
+        ${n1} > ${n2} = ${maior}<br>
+        ${n1} < ${n2} = ${menor}<br>
+        ${n1} == ${n2} = ${igual}<br>
+        ${n1} != ${n2} = ${diferente}<br>
+        ${n1} === ${n2} = ${identico}<br>
+        ${n1} !== ${n2} = ${nao_identico}<br>
+        `)
+    </script>
+</body>
+</html>

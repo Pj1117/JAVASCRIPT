@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Relacionais em JS</title>
+</head>
+<body>
+    <script>
+
+        /*Operadores Relacionais*/
+        5 > 2 /* true ou 1 (5 é maior que 2) */
+        7 < 4 /* false ou 0 (7 não é menor que 4) */
+        8 >= 8 /* true ou 1 (8 é maior OU igual a 8) */
+        9 <= 7 /* false ou 0 (9 não é menor OU igual a 7) */
+        5 == 5 /* true ou 1 (5 é igual a 5) */
+        4 != 4 /* false ou 0 (4 não é diferente de 4) */
+
+        /*Operadores de identidade*/
+        5 == '5' /*O JavaScript diz que isso é true pq tem o mesmo valor :/ (true)*/
+        5 == 5 /*O javascript entende que se ambos tem o mesmo valor (5), eles são considerados iguais independente do tipo (true)*/
+        5 === '5' /*testa se os dois números 5 são IDÊNTICOS, isso é, ele analisa se eles têm o mesmo valor e se eles tem o MESMO TIPO (false)*/
+        5 === 5 /*Os dois numeros tem o mesmo valor e tem os mesmo tipo. (true)*/
+        5 !== '5' /*Testa se os numeros são Diferentes, tanto em tipo quanto em valor, no caso eles são diferentes (true)*/
+        5 !== 5 /*Testa se os numeros são Diferentes, tanto em tipo quanto em valor, no caso eles são iguais (false)*/
+
+        var a = 8
+        var b = 15
+        var Soma_relacionais_com_aritmeticos = a <= b - 10 /*Se faz o b - 10 primeiro depois o operador relacional a <= b*/
+
+        /*Operadores Lógicos*/
+        '!' /*Negação (é como se fosse um 'não' -eu quero uma caneta azul NÃO uma vermelha-)*/
+        '&&' /*Conjunção (é come se fosse o 'e' -eu quero uma caneta azul E uma vermelha)*/
+        '||' /*Disjunção (é como se fosse o 'ou' -eu quero uma caneta azul OU uma vermelha)*/
+        /*Ordem de precedência = ! , &&, ||*/
+        
+        var a = 5
+        var b = 8
+
+        true && false
+        /*false - Sempre que algum dos lados for falso no operador &&, o resultado é sempre false pois se deseja ter as duas coisas (uma E outra)*/
+
+        true || false
+        /*true - Sempre que algum dos lados for true no operador ||, o resultado sempre var ser true pois se deseja ter uma coisa OU outra*/
+
+        a >= b && b % 2 == 0 /*resultado: false*/
+        /*true*/  /*false*/
+        /*Dentro dessa expressão tem os três operadores: Aritmeticos, Relacionais e Lógicos. Se em alguma expressão houver esses 3, o primeiro a ser feito será o aritmético, em segundo os relacionais e por último os operadores Lógicos.*/
+
+        a <= b || b / 2 == 2 /*resultado: true*/
+        /*true*/  /*false*/
+
+        /*Operador ternário - É composto por 2 símbolos que aparecem na mesma expressão: '?'' e ':'
+        Ele se chama ternário por que tem 3 partes*/
+
+        teste ? true : false
+        media >= 7?"aprovado":"reprovado"
+        /*A média é maior ou igual a 7? se for maior ou igual a 7 irá aparecer a mensagem aprovado, se não for maior ou igual a 7, irá aparecer a mensagem reprovado */
+    </script>
+</body>
+</html>

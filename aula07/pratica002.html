@@ -3,26 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Operadores em JS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
 <body>
     <script>
-        var numero = 5
+        var primeiro_numero = 5
 
-        numero *= 5 /*1° na Ordem de precedência*/
-        numero /= 3/*1° na Ordem de precedência*/
-        numero %= 4 /*1° na Ordem de precedência*/
-        numero **= 6 /*2° na Ordem de precedência*/
-        numero += 9 /*3° na ordem de precedência*/
-        numero -= 4 /*3° na Ordem de precedência*/
+        primeiro_numero *= 5 /*1° na Ordem de precedência*/
+        primeiro_numero /= 3/*1° na Ordem de precedência*/
+        primeiro_numero %= 4 /*1° na Ordem de precedência*/
+        primeiro_numero **= 6 /*2° na Ordem de precedência*/
+        primeiro_numero -= 4 /*3° na Ordem de precedência*/
 
-        numero ++ /*Calucula o resultado depois*/
-        numero -- /*Calcula o resultado depois*/
-        
-        ++ numero /*Calcula o resultado primeiro*/
-        -- numero /*Calcula o resultado primeiro*/
+        primeiro_numero ++ /*Calucula o resultado depois*/
+        primeiro_numero -- /*Calucula o resultado depois*/      
+        ++ primeiro_numero /*Calcula o resultado primeiro*/
+        -- primeiro_numero /*Calcula o resultado primeiro*/
 
-        document.write(`Variável numero: ${numero}`)
+        var segundo_numero = 3
+
+        segundo_numero = 3 * 5 /* 3 multiplicado por 5 (15)*/
+        segundo_numero = 3 * 5 / 2 /*5 dividido por 2 e multiplicado por 3 (7.5)*/
+        segundo_numero = (3 * 5) / 2 /*3 multiplicado por 5 e dividido por 2 (7.5)*/
+        segundo_numero = (3 * 5) / 2 % 4 /*3 multiplicado por 5 e dividido pelo resto da divisão entre 2 e 4 (2)*/
+        segundo_numero = (3 * 5) / 2 ** 4 /*3 multiplicado por 5 e dividido por 2 elevado a 4 (0.935)*/
+
+        document.write(`Variável <strong>primeiro_numero</strong>: ${primeiro_numero}<br>
+        Variável <strong>segundo_numero</strong>: ${segundo_numero}`)
+
+        var numero_0 = 1
+        var numero_1 = 3
+        var numero_2 = 5
+        var numero_3 = 8
+        var numero_4 = 3.2
+        numero_0 = numero_1 + numero_2
+        numero_1 = numero_0 * numero_3 / numero_4
+        numero_2 = numero_1 ** numero_4 % numero_2
+        numero_3 = numero_2 ** numero_1 + numero_3 / numero_0 % numero_2
+        numero_4 = segundo_numero / primeiro_numero
+        document.write(`<br>
+        <br>
+        Resultado <strong>N° 0</strong>: ${numero_0}<br>
+        Resultado <strong>N° 1</strong>: ${numero_1}<br>
+        Resultado <strong>N° 2</strong>: ${numero_2}<br>
+        Resultado <strong>N° 3</strong>: ${numero_3}<br>
+        Resultado <strong>N° 4</strong>: ${numero_4}<br>
+        `)
+
+        var numero_negativo = -1
+        numero_negativo --
+        document.write(`
+        <br>
+        Número negativo: ${numero_negativo}`)
     </script>
 </body>
 </html>
