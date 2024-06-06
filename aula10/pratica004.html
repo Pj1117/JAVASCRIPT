@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+    <style>
+        input{
+            width: 220px;
+        }
+
+        input[type=button] {
+            width: 70px;
+        }
+
+        p{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Manipulando Strings com JS</h1>
+    <input type="number" name="nome" id="Inome" placeholder="Digite um número de 1 a 5">
+    <input type="button" value="Enviar" onclick="number()">
+    <p>Resultado</p>
+
+    <script>
+        function number(){
+        var e = Number(window.document.getElementsByTagName('input')[0])
+        var r = window.document.getElementsByTagName('p')[0]
+
+        var res = e != 3 ? r.innerText='EAC' : r.innerText='ABC'
+
+        }
+    </script>
+</body>
+</html>

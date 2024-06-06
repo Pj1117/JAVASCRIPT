@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores de Elementos</title>
+    <style>
+        body,html{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .estilo{
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+            text-decoration: underline;
+            background-color: dodgerblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="estilo" onclick="clicou()" onmouseenter="entrou()" onmouseout="saiu()">
+        <h1>Seletor de elementos JS</h1>
+        <div>Elemento 1</div>
+        <p id="elemento2">Elemento 2</p>
+        <header class="elemento3">Elemento 3</header>
+        <br>
+        <main name="elemento4">Elemento 4</main>
+    </div>
+    <script>
+        var pra_funcao = window.document.getElementsByTagName('div')[0] 
+
+        var e1 = window.document.getElementsByTagName('div')[1]
+        e1.style.color = 'black'
+        e1.innerHTML = 'Seletor feito pela tag'
+
+        var e2 = window.document.getElementById('elemento2')
+        e2.style.color = 'lightgreen'
+
+        var e3 = window.document.getElementsByClassName('elemento3')[0]
+        e3.style.color = 'brown'
+
+        var e4 = window.document.getElementsByName('elemento4')[0]
+        e4.style.color = 'yellow'
+
+        function entrou(){
+            pra_funcao.style.background = 'rgb(56, 107, 158)'
+        }
+        
+        function clicou(){
+            pra_funcao.style.background = 'rgb(63, 63, 179)'
+        }
+
+        function saiu(){
+            pra_funcao.style.background = 'dodgerblue'
+        }
+ 
+    </script>
+</body>
+</html>
