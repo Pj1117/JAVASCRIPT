@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch com Materias Escolares</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main h1{
+            text-align: center;
+        }
+
+        main p{
+            margin-bottom: 3px;
+        }
+
+        input{
+            margin-bottom: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <h1>Materias Escolares</h1>
+        <p>Digite um número de 0 a 5 para ver qual material escolar corresponde a esse número:</p>
+    </main>
+    <input type="number" name="num" id="Inum">
+    <input type="button" value="Verificar" onclick="clicou()">
+    <div id="res">
+        Resposta
+    </div>
+
+    <script>
+        var res = window.document.querySelector('div#res')
+        var num = window.document.getElementById('Inum')
+        function clicou(){
+            var n = Number(num.value)
+            switch (n){
+                case 0:
+                    res.innerHTML = `O Material escolcar correspondente com o número ${n} é o <strong>lápis</strong>.`
+                    break
+                case 1:
+                    res.innerHTML = `O materia escolar correspondente com o número ${n} é a <strong>caneta</strong>.`
+                    break
+                case 2:
+                    res.innerHTML = `O material escolar correspondente com o número ${n} é a <strong>tesoura</strong>.`
+                    break
+                case 3:
+                    res.innerHTML = `O material escolar correspondente com o número ${n} é a <strong>borracha</strong>.`
+                    break
+                case 4:
+                    res.innerHTML = `O material escolar correspondente com o número ${n} é o <strong>caderno</strong>.`
+                    break
+                case 5:
+                    res.innerHTML = `O material escolar correspondente com o número ${n} é o <strong>livro</strong>.`
+                    break
+                default:
+                    res.innerHTML = `[ERRO] Digite um número entre 0 e 5.`
+                    break
+            }
+        }
+    </script>
+</body>
+</html>
