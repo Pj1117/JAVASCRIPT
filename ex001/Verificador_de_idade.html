@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <h1 style="color: white; margin: 30px;">Verificador de idade</h1>
+    <div class="formulario">
+
+        Ano de Nascimento: <input type="number" name="idade" id="Iidade">
+        <br> 
+        <br>
+        
+        Sexo: <input type="radio" name="sexo" id="Masculino" checked> Masculino
+        <input type="radio" name="sexo" id="Feminino"> Feminino
+        <br>
+        <br>
+      
+
+        <input type="button" value="Verificar" onclick="clicou()"> 
+        <br>
+        <br>
+
+        <div id="res">
+            <p>Detectamos Mulher com 59 anos</p>
+            <br>
+            <img src="ico-10.ico" alt="gatu :3" id="imagem_res"> <!--Coloquei id pra colocar imagem de acordo com as idades (tentar usar o switch pra isso!)-->
+        </div>  
+    </div>
+
+        <script>
+            function clicou() {
+            var res = window.document.querySelector('div#res')
+            var nasc = document.querySelector('input[name="idade"]').value;
+            var sx1 = window.document.getElementById('Masculino')
+            var sx2 = window.document.getElementById('Feminino')
+            var M = sx1.value
+            var F = sx2.value
+
+            var sexo = sx1.checked ? 'Homem' : 'Mulher'
+
+            var agora  = new Date()
+            var ano = agora.getFullYear()
+                if (nasc == 0 || nasc > ano){
+                    res.innerHTML = `Por favor Digite uma data de nascimento válida!`
+                }
+
+                else {
+                    var idade = ano - nasc
+                    if (sexo == 'Homem'){
+                        res.innerHTML = `Detectamos um ${sexo} com ${idade} anos de idade.
+                        <br>
+                        <br>
+                        <img src="ico-1.ico" alt="gatu :3" id="imagem_res">`
+                    }
+                    else{
+                        res.innerHTML = `Detectamos uma ${sexo} com ${idade} anos de idade.
+                        <br>
+                        <br>
+                        <img src="ico-4.ico" alt="gatu :3" id="imagem_res">`
+                    }
+                }
+               
+            }
+        </script>
+    </div>
+</body>
+</html>
