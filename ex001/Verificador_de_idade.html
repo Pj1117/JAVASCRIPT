@@ -25,9 +25,9 @@
         <br>
 
         <div id="res">
-            <p>Detectamos Mulher com 59 anos</p>
-            <br>
-            <img src="ico-10.ico" alt="gatu :3" id="imagem_res"> <!--Coloquei id pra colocar imagem de acordo com as idades (tentar usar o switch pra isso!)-->
+           Complete o questionário para<br>
+           ver o Resultado <br>
+           😊
         </div>  
     </div>
 
@@ -50,21 +50,52 @@
 
                 else {
                     var idade = ano - nasc
-                    if (sexo == 'Homem'){
+                    if (sexo == 'Homem' && idade >= 5 || idade <= 10){
                         res.innerHTML = `Detectamos um ${sexo} com ${idade} anos de idade.
                         <br>
                         <br>
                         <img src="ico-1.ico" alt="gatu :3" id="imagem_res">`
                     }
-                    else{
+
+                    if (sexo == 'Homem' && idade >=10 || idade <= 40){
+                        res.innerHTML = `Detectamos um ${sexo} com ${idade} anos de idade.
+                        <br>
+                        <br>
+                        <img src="ico-2.ico" alt="gatu :3" id="imagem_res">`
+
+                    }
+
+                    if (sexo == 'Homem' && idade >= 40 || idade <= 80){
+                        res.innerHTML = `Detectamos um ${sexo} com ${idade} anos de idade.
+                        <br>
+                        <br>
+                        <img src="ico-3.ico" alt="gatu :3" id="imagem_res">`
+
+                    }
+                    
+                    if(sexo == 'Mulher' && idade >= 5 || idade <= 10){
                         res.innerHTML = `Detectamos uma ${sexo} com ${idade} anos de idade.
                         <br>
                         <br>
                         <img src="ico-4.ico" alt="gatu :3" id="imagem_res">`
                     }
+
+                    if (sexo == 'Mulher' && idade >= 10 || idade <= 40){
+                        res.innerHTML = `Detectamos uma ${sexo} com ${idade} anos de idade.
+                        <br>
+                        <br>
+                        <img src="ico-5.ico" alt="gatu :3" id="imagem_res">`
+                    }
+
+                    if (sexo == 'Mulher' && idade >= 40 || idade <= 80){
+                        res.innerHTML = `Detectamos uma ${sexo} com ${idade} anos de idade.
+                        <br>
+                        <br>
+                        <img src="ico-6.ico" alt="gatu :3" id="imagem_res">`
+                    }
+                }
                 }
                
-            }
         </script>
     </div>
 </body>
