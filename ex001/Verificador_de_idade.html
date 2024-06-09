@@ -50,52 +50,77 @@
 
                 else {
                     var idade = ano - nasc
-                    if (sexo == 'Homem' && idade >= 5 || idade <= 10){
-                        res.innerHTML = `Detectamos um ${sexo} com ${idade} anos de idade.
-                        <br>
-                        <br>
-                        <img src="ico-1.ico" alt="gatu :3" id="imagem_res">`
-                    }
+                    if (sexo == 'Homem'){
+                        if (idade >= 1 && idade <= 10){
+                            res.innerHTML = `Detectamos um ${sexo} com ${idade} anos de idade.
+                            <br>
+                            <br>
+                            <img src="ico-1.ico" alt="gato">`;
+                        }
 
-                    if (sexo == 'Homem' && idade >=10 || idade <= 40){
-                        res.innerHTML = `Detectamos um ${sexo} com ${idade} anos de idade.
-                        <br>
-                        <br>
-                        <img src="ico-2.ico" alt="gatu :3" id="imagem_res">`
+                        else {
+                            if (idade > 10 && idade <= 20){
+                            res.innerHTML = `Detectamos um ${sexo} com ${idade} anos de idade.
+                            <br>
+                            <br>
+                            <img src="ico-2.ico" alt="gato">`;
+                            }
 
-                    }
+                            else if (idade > 20 && idade <= 40){
+                            res.innerHTML = `Detectamos um ${sexo} com ${idade} anos de idade.
+                            <br>
+                            <br>
+                            <img src="ico-3.ico" alt="gato">`;
+                            }
 
-                    if (sexo == 'Homem' && idade >= 40 || idade <= 80){
-                        res.innerHTML = `Detectamos um ${sexo} com ${idade} anos de idade.
-                        <br>
-                        <br>
-                        <img src="ico-3.ico" alt="gatu :3" id="imagem_res">`
+                            else if (idade > 40 && idade <= 120){
+                            res.innerHTML = `Detectamos um ${sexo} com ${idade} anos de idade.
+                            <br>
+                            <br>
+                            <img src="ico-4.ico" alt="gato">`;
+                            }
 
-                    }
+                            else {
+                                res.innerHTML = `Idade fora do esperado para o sexo Masculino.`
+                            }
+                        } 
+                    } 
                     
-                    if(sexo == 'Mulher' && idade >= 5 || idade <= 10){
-                        res.innerHTML = `Detectamos uma ${sexo} com ${idade} anos de idade.
-                        <br>
-                        <br>
-                        <img src="ico-4.ico" alt="gatu :3" id="imagem_res">`
-                    }
+                    else if(sexo == 'Mulher'){
+                        if (idade >= 1 && idade <= 10){
+                            res.innerHTML = `Detectamos uma ${sexo} com ${idade} anos de idade.
+                            <br>
+                            <br>
+                            <img src="ico-5.ico" alt="gato">`;
+                        }
+                        else if (idade > 10 && idade <= 20){
+                            res.innerHTML = `Detectamos uma ${sexo} com ${idade} anos de idade.
+                            <br>
+                            <br>
+                            <img src="ico-6.ico" alt="gato">`;
+                        }
 
-                    if (sexo == 'Mulher' && idade >= 10 || idade <= 40){
-                        res.innerHTML = `Detectamos uma ${sexo} com ${idade} anos de idade.
-                        <br>
-                        <br>
-                        <img src="ico-5.ico" alt="gatu :3" id="imagem_res">`
-                    }
+                        else if (idade > 20 && idade <= 40){
+                            res.innerHTML = `Detectamos uma ${sexo} com ${idade} anos de idade.
+                            <br>
+                            <br>
+                            <img src="ico-7.ico" alt="gato">`;
+                        }
 
-                    if (sexo == 'Mulher' && idade >= 40 || idade <= 80){
-                        res.innerHTML = `Detectamos uma ${sexo} com ${idade} anos de idade.
-                        <br>
-                        <br>
-                        <img src="ico-6.ico" alt="gatu :3" id="imagem_res">`
+                        else if(idade > 40 && idade <= 120){
+                            res.innerHTML = `Detectamos uma ${sexo} com ${idade} anos de idade.
+                            <br>
+                            <br>
+                            <img src="ico-8.ico" alt="gato">`;
+                        }
+
+                        else{
+                            res.innerHTML = `Idade fora do esperado para o sexo Feminino.`
+                        }
                     }
-                }
-                }
-               
+                } 
+                
+            }
         </script>
     </div>
 </body>
