@@ -30,7 +30,8 @@ div#res{
 }
 
 div#res img{
-    display: block;
-    margin: auto;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.274);
 }
