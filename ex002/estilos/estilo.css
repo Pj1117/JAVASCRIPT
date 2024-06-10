@@ -11,7 +11,7 @@ header{
 }
 
 section{
-    text-align: center;
+    padding: 10px;
     background-color: white;
     width: 500px;
     margin: auto;
@@ -19,6 +19,14 @@ section{
     padding-bottom: 15px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.329);
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
 }
 
 footer{
