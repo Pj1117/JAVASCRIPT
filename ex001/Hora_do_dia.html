@@ -8,36 +8,18 @@
 </head>
 <body onload="recarregar()">
     <h1>Hora do dia</h1>
-    <div class="res">
-        <p>Agora são tantas horas</p>
-        <img src="Imagens/Fundo_provisorio.ico" alt="imagem">
-    </div>
+    <section>
+        <div id="text">
+            Agora são Tantas Horas.
+        </div>
+        <div class="res">
+            <img id="picture" src="Imagens/Fundo_provisorio.ico" alt="imagem">
+        </div>
+    </section>
+    <footer><a href="https://github.com/Pj1117" target="_blank" rel="external">&copy; Pj1117</a></footer>
 
-    <script>
-        var body = window.document.body.style.background = '#87CEFA'
-        var res = window.document.querySelector('div.res')
-        var agora = new Date()
-        var hora = agora.getHours()
-        
-        function recarregar(){
-            if (hora > 1 && hora <= 12){
-                window.document.body.style.background = 'rgb(194, 194, 67)'
-                res.innerHTML = `Agora são ${hora} horas! Bom Dia!
-                <img src="Imagens/Amanhecer.ico" alt="imagem">`
-            }
-
-            else if(hora > 12 && hora <= 18){
-                window.document.body.style.background = `rgb(244,164,96)`
-                res.innerHTML = `Agora são ${hora} horas! Boa Tarde!
-                <img src="Imagens/Entardecer.ico" alt="imagem">`
-            }
-
-            else if (hora > 18){
-                window.document.body.style.background = 'rgb(79,79,79)'
-                res.innerHTML = `Agora são ${hora} horas! Boa Noite!
-                <img src="Imagens/Anoitecer.ico" alt="imagem">`
-            }
-        }
+    <script src="scripts/meu_script.js">
+       
     </script>
 </body>
 </html>
