@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: skyblue;
+}
+
+header h1{
+    color: white;
+    text-align: center;
+}
+
+section{
+    background-color: white;
+    width: 400px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
+}
+
+footer{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+input[type=button]{
+    padding: 10px;
+    display: block;
+    margin: auto;
+    width: 90%;
+    border: 0px;
+    background-color: rgb(128, 218, 128);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(128, 218, 128, 0.63);
+}
+
+input[type=button]:hover{
+    text-decoration: underline;
+    background-color: rgba(128, 218, 128, 0.74);
+}

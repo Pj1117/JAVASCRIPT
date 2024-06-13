@@ -14,7 +14,13 @@ function contar(){
             inicio += passo
         }
         
-    }
+    } else if (inicio > fim){
+        while (inicio >= fim){
+            res.innerHTML += `${inicio} 👉`
+            inicio -= passo
+        }
+    }   
 
+    res.innerHTML += '🏁'
     
 }
