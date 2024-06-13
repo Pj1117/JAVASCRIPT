@@ -26,16 +26,16 @@ var l_10 = document.getElementById('l_10')
         }
     }
 
-    l_1.innerHTML = `${numero.replace('', '0')} x ${conta[0]} = ${numero * conta[0]}`
-    l_2.innerHTML = `${numero.replace('', '0')} x ${conta[1]} = ${numero * conta[1]}`
-    l_3.innerHTML = `${numero.replace('', '0')} x ${conta[2]} = ${numero * conta[2]}`
-    l_4.innerHTML = `${numero.replace('', '0')} x ${conta[3]} = ${numero * conta[3]}`
-    l_5.innerHTML = `${numero.replace('', '0')} x ${conta[4]} = ${numero * conta[4]}`
-    l_6.innerHTML = `${numero.replace('', '0')} x ${conta[5]} = ${numero * conta[5]}`
-    l_7.innerHTML = `${numero.replace('', '0')} x ${conta[6]} = ${numero * conta[6]}`
-    l_8.innerHTML = `${numero.replace('', '0')} x ${conta[7]} = ${numero * conta[7]}`
-    l_9.innerHTML = `${numero.replace('', '0')} x ${conta[8]} = ${numero * conta[8]}`
-    l_10.innerHTML = `${numero.replace('', '0')} x ${10} = ${numero * 10}`
-    txt.innerHTML = `O Número ${numero.replace('', '0')} foi identificado com sucesso!`
+    l_1.innerHTML = `${numero} x ${conta[0]} = ${numero * conta[0]}`
+    l_2.innerHTML = `${numero} x ${conta[1]} = ${numero * conta[1]}`
+    l_3.innerHTML = `${numero} x ${conta[2]} = ${numero * conta[2]}`
+    l_4.innerHTML = `${numero} x ${conta[3]} = ${numero * conta[3]}`
+    l_5.innerHTML = `${numero} x ${conta[4]} = ${numero * conta[4]}`
+    l_6.innerHTML = `${numero} x ${conta[5]} = ${numero * conta[5]}`
+    l_7.innerHTML = `${numero} x ${conta[6]} = ${numero * conta[6]}`
+    l_8.innerHTML = `${numero} x ${conta[7]} = ${numero * conta[7]}`
+    l_9.innerHTML = `${numero} x ${conta[8]} = ${numero * conta[8]}`
+    l_10.innerHTML = `${numero} x ${10} = ${numero * 10}`
+    txt.innerHTML = `O Número ${numero} foi identificado com sucesso!`
 }
 
