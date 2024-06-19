@@ -1,4 +1,3 @@
-// tentar criar option no select
 var lista_definitiva = []
 var lista = []
 var div_fializar = document.getElementById('final')
@@ -27,7 +26,6 @@ function adicionar (numero){
     }
 }
 
-
 function soma(){
     let criar_p0 = document.createElement('p')
     div_fializar.appendChild(criar_p0)
@@ -37,7 +35,7 @@ function soma(){
 function menor(){
     let criar_p1 = document.createElement('p')
     div_fializar.appendChild(criar_p1)
-    var lista_com_sort = lista_definitiva.sort()
+    lista_definitiva.sort()
     return criar_p1.innerHTML = `O menor número digitado foi ${lista_definitiva[0]}`
 }
 
