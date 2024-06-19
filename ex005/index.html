@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analisador de Números</title>
+    <title>Document</title>
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
-        <h1>Analisador de Números</h1>
+        <h1>Analisador de números</h1>
     </header>
     <section>
         <label for="Inumero">Número (entre 1 e 100)</label>
-        <input type="number" name="numero" id="Inumero">
-        <input type="button" value="Adicionar" onclick="adicionar()">
+        <input type="number" name="input" id="Inumero">
+        <input type="button" value="Adicionar" onclick="adicionar(document.getElementById('Inumero').value), lista(document.getElementById('Inumero').value)"> <br> <br>
+        <select name="seleção" id="select" size="10">
+            
+        </select>
         <br>
-        <br>
-    <select name="select" id="tabela" size="10">
-        
-    </select>
-    <br>
-    <input type="button" value="Finalizar" onclick="finalizar()">
-    <div id="res">Resultado</div>
+        <input type="button" value="Finalizar" onclick="finalizar(document.getElementById('Inumero').value)">
+        <div id="teste">teste</div>
+
+    </section>
     <script src="scripts/script.js">
-        
+
     </script>
-</section>
+
 </body>
 </html>
