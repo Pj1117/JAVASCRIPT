@@ -44,6 +44,8 @@ function menor(){
 function media(){
     let criar_p2 = document.createElement('p')
     div_fializar.appendChild(criar_p2)
-    return criar_p2.innerHTML = `A media dos números digitados é ${total/lista.length}`
+    var r = total / lista.length
+    var resultado = r.toFixed(2)
+    return criar_p2.innerHTML = `A media dos números digitados é ${resultado.replace('.', ',')}`
 }
 
