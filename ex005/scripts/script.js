@@ -10,17 +10,18 @@ function adicionar (numero){
     if (numero  > 0 && numero <= 100){
         botao_final.style.display = 'inline'
         let c = 0
-        while (lista.includes(numero) == false){
+        while (lista_definitiva.includes(numero) == false){
         let criar = document.createElement('option')
         select.appendChild(criar)
             lista += numero
-            total += Number(numero)
+            total += numero
             lista_definitiva.push(numero)
             c += 1
             return criar.innerHTML = `Valor ${numero} adicionado!`
         }
-    } else if (lista_definitiva.includes(numero) == true){
-        return window.alert(`${lista_definitiva} Número já adicionado!`)
+    }
+    if (lista_definitiva.includes(numero) == true){
+        return window.alert(`Número já adicionado!`)
     } else if (numero <= 0 || numero > 100 || numero.lenght == 0){
         return window.alert (`O número ${numero} não é um número que está entre 1 e 100!`)
     }
