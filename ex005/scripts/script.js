@@ -29,14 +29,17 @@ function adicionar (numero){
 function soma(){
     let criar_p0 = document.createElement('p')
     div_fializar.appendChild(criar_p0)
-    return criar_p0.innerHTML = `A soma de todos os números digitados é ${total}`
+    
+    return criar_p0.innerHTML = `Foram digitados ${lista_definitiva.length} números <br><br>
+    A soma de todos os números digitados é ${total}`
 }
 
 function menor(){
     let criar_p1 = document.createElement('p')
     div_fializar.appendChild(criar_p1)
     lista_definitiva.sort()
-    return criar_p1.innerHTML = `O menor número digitado foi ${lista_definitiva[0]}`
+    return criar_p1.innerHTML = `O maior valor digitado foi ${lista_definitiva.at(-1)} <br><br>
+    O menor número digitado foi ${lista_definitiva[0]}`
 }
 
 function media(){
